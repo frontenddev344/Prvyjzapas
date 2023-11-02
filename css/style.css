@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -28,6 +28,10 @@ a {
   color: inherit;
 }
 
+p {
+  font-family: "Outfit", sans-serif;
+}
+
 a:focus,
 a:hover {
   color: inherit;
@@ -39,9 +43,9 @@ h3,
 h4,
 h5,
 h6,
-p,
 figure {
   margin: 0;
+  font-family: "Playfair Display", serif;
 }
 
 html {
@@ -55,7 +59,7 @@ html {
 }
 
 .site-header {
-  background: #212121;
+  background: #e4dccf;
   position: fixed;
   top: 0;
   left: 0;
@@ -118,7 +122,7 @@ html {
   padding: 1.6rem;
   transition: all 0.2s linear;
   position: relative;
-  color: #fff;
+  color: #031a29;
 }
 @media screen and (max-width: 991px) {
   .site-header .container .site-menu ul a {
@@ -142,7 +146,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   .site-header .container .site-menu ul a {
-    color: #fff;
+    color: #e4dccf;
     padding: 1rem;
   }
 }
@@ -169,7 +173,15 @@ html {
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
-  height: 60rem;
+  height: 500px;
+  z-index: 2;
+}
+.site-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
 }
 .site-banner .container {
   height: 100%;
@@ -183,14 +195,13 @@ html {
 }
 .site-banner .banner-main-content h1 {
   font-size: 4rem;
-  color: #fff;
-  font-family: "Comfortaa", cursive;
+  color: #e4dccf;
   line-height: 1.7;
   text-transform: capitalize;
   margin: 0 0 1rem;
 }
 .site-banner .banner-main-content p {
-  color: #fff;
+  color: #031a29;
   font-size: 1.6rem;
   text-align: center;
 }
@@ -209,11 +220,11 @@ html {
 
 .site-footer {
   position: relative;
-  background: #262626;
+  background: #031a29;
   padding: 8rem 0 0;
 }
 .site-footer .footer-logo p {
-  color: #fff;
+  color: #e4dccf;
   font-size: 1.8rem;
 }
 .site-footer .footer-logo a {
@@ -224,12 +235,12 @@ html {
   margin-left: 6rem;
 }
 .site-footer .useful-link li a {
-  color: #fff;
+  color: #e4dccf;
   font-size: 1.6rem;
   display: inline-block;
 }
 .site-footer .footer-address li {
-  color: #fff;
+  color: #e4dccf;
   font-size: 1.6rem;
 }
 .site-footer .footer-social ul {
@@ -238,24 +249,27 @@ html {
 }
 .site-footer .footer-social ul li a {
   display: inline-block;
-  background: #fff;
+  background: #e4dccf;
   width: 4rem;
   height: 4rem;
   line-height: 4rem;
   text-align: center;
   font-size: 2rem;
-  color: #212121;
+  color: #031a29;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   margin-right: 1rem;
 }
+.site-footer .footer-social ul li a:hover {
+  transform: translateY(-10px);
+}
 .site-footer .footer-bottom {
-  background: #212121;
+  background: #e4dccf;
   padding: 1rem 0;
   margin-top: 5rem;
 }
 .site-footer .footer-bottom .copyright p {
-  color: #fff;
+  color: #031a29;
 }
 .site-footer .footer-bottom .privacy-and-policy ul {
   display: flex;
@@ -265,7 +279,84 @@ html {
 .site-footer .footer-bottom .privacy-and-policy ul a {
   display: inline-block;
   margin-left: 1rem;
-  color: #fff;
+  color: #031a29;
 }
+
+.useful-link h3, .footer-address h3 {
+  color: #e4dccf;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+/* homecard-css-start*/
+.content {
+  padding: 40px 0;
+}
+.content__section p {
+  color: #e4dccf;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.slovernia__destinations {
+  height: 100%;
+}
+.slovernia__destinations img {
+  width: 100%;
+  height: 303px;
+  object-fit: cover;
+}
+.slovernia__destinations p {
+  color: #e4dccf;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: justify;
+}
+
+.Slovenia__content {
+  padding: 20px 20px;
+}
+.Slovenia__content h3 {
+  color: #e4dccf;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.Slovenia__content p {
+  color: #031a29;
+  font-size: 17px;
+}
+
+.slovernia__card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.slovernia__card:hover {
+  transform: translateY(-10px);
+}
+
+.space {
+  margin: 20px 0;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+/* homecard-css-end*/
+/*lasttext-css-start*/
+section.lasttext {
+  padding: 50px 0;
+}
+
+.lasttext-content h3 {
+  color: #e4dccf;
+}
+
+/*lasttext-css-end*/
 
 /*# sourceMappingURL=style.css.map */
