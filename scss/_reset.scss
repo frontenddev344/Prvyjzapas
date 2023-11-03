@@ -570,9 +570,27 @@ section.lasttext {
 
 
 .budget_main{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
+    padding: 70px 0;
     .budget_box{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        .contents {
+            background: #e4dccf;
+            text-align: center;
+            padding: 24px;
+            position: relative;
         h3{
             @include box_heading;
         }
+        span{
+            font-size: 125px;
+            font-weight: 600;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #0e0d0d1c;
+            z-index: 0;
+        }
     }
+ }
 }

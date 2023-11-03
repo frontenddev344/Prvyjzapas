@@ -507,12 +507,34 @@ section.lasttext {
   color: #031a29;
 }
 
-.budget_main .budget_box h3 {
+.budget_main {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
+  padding: 70px 0;
+}
+.budget_main .budget_box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.budget_main .budget_box .contents {
+  background: #e4dccf;
+  text-align: center;
+  padding: 24px;
+  position: relative;
+}
+.budget_main .budget_box .contents h3 {
   color: #031a29;
   font-size: 20px;
   line-height: 40px;
   font-weight: 600;
   text-transform: capitalize;
+}
+.budget_main .budget_box .contents span {
+  font-size: 125px;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(14, 13, 13, 0.1098039216);
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
