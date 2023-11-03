@@ -470,4 +470,23 @@ section.lasttext {
   padding: 2rem 0;
 }
 
+/*--Rozpočet page--*/
+.Rozpočet_bnr {
+  background: url(../images/budget-bnr.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.Rozpočet_bnr:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
