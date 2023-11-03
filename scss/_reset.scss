@@ -60,6 +60,9 @@ html {
 }
 
 // site header start// 
+.site-logo img {
+    max-width: 60%;
+}
 .site-header {
     background: $secondery-color;
     position: fixed;
@@ -82,7 +85,6 @@ html {
                 display: inline-block;
                 text-transform: uppercase;
                 letter-spacing: 0.4rem;
-                padding: 1.6rem;
             }
         }
 
@@ -223,11 +225,23 @@ html {
             color:$current-color;
             font-size: 1.6rem;
             text-align: center;
+            max-width: 60%;
         }
     }
 
 }
-
+section.site-banner.Rozpočet{
+    margin-top: 5.9rem;
+    padding: 0 0;
+    position: relative;
+    background: url(../images/budgetbanner.jpg) rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 500px;
+    z-index: 2;
+}
 // hotel_list start //
 .hotel_list {
     padding: 8rem 0;
@@ -249,18 +263,22 @@ html {
 // footer-css start //
 .site-footer {
     position: relative;
-    background: $theme-color;
+    background: $secondery-color;
     padding: 8rem 0 0;
 
     .footer-logo {
         p {
-            color: $secondery-color;
+            color: #fff;
             font-size: 1.8rem;
         }
 
         a {
             display: inline-block;
             color: #fff;
+            margin: 0 0 2rem;
+            img{
+                max-width: 60%;
+            }
         }
     }
 
@@ -269,7 +287,7 @@ html {
 
         li {
             a {
-                color: $secondery-color;
+                color: #fff;
                 font-size: 1.6rem;
                 display: inline-block;
             }
@@ -278,7 +296,7 @@ html {
     }
 
     .footer-address li {
-        color: $secondery-color;
+        color: #fff;
         font-size: 1.6rem;
     }
 
@@ -288,7 +306,7 @@ html {
 
         li a {
             display: inline-block;
-            background: $secondery-color;
+            background: #fff;
             width: 4rem;
             height: 4rem;
             line-height: 4rem;
@@ -305,7 +323,7 @@ html {
     }
 
     .footer-bottom {
-        background: $secondery-color;
+        background: #fff;
         padding: 1rem 0;
         margin-top: 5rem;
 
@@ -332,9 +350,10 @@ html {
     }
 }
 .useful-link h3,.footer-address h3 {
-    color: $secondery-color;
+    color:#fff;
     font-size: 25px;
     line-height: 34px;
+    margin: 0 0 2rem;
 }
 // footer-css end //
 
@@ -344,7 +363,7 @@ html {
 
     &__section {
         p {
-            color: $secondery-color;
+            color:$secondery-color;
             font-size: 18px;
             line-height: 26px;
             text-align: center;
@@ -427,3 +446,71 @@ section.lasttext {
     @include button;
 }
 
+.trip-section {
+    padding: 8rem 0;
+    .trip-content-wrap{
+        .content_box{
+            padding: 2rem;
+            box-shadow: 0 0 10px 0 $secondery-color;
+            margin: 0 0 4rem;
+            border-left: 10px solid $secondery-color;
+        }
+        .grid_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+            grid-gap: 2rem;
+            .grid_item {
+                border-radius: 20px;
+                background:#e4dccf7d;
+                padding: 20px;
+                position: relative;
+                isolation: isolate;
+                overflow: hidden;
+                cursor: pointer;
+                &:hover{
+                    &::after{
+                        transform: translateY(0%); 
+                    }
+                .number{
+                    transform: translate(100%) rotate(360deg);
+                
+                }
+                }
+                &::after{
+                    content: "";
+                    background: $secondery-color;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: inherit;
+                    z-index: -1;
+                    transition: all .3s ease-in-out;
+                    width: 100%;
+                    transform: translateY(-100%);
+                }
+                .icon{
+                    .number{
+                        font-size: 24px;
+                        line-height: normal;
+                        color: #000;
+                        font-weight: 500;
+                        border: 2px solid;
+                        border-radius: 50%;
+                        width: 50px;
+                        aspect-ratio: 1;
+                        text-align: center;
+                        display: grid;
+                        place-content: center;
+                        margin-bottom: 10px;
+                        transition: all .6s ease-in-out;
+                    }
+                }
+                .content{
+                    padding: 2rem 0;
+                }
+            }
+        }
+    }
+}
