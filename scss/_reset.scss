@@ -568,10 +568,12 @@ section.lasttext {
     }
 }
 
-
+/*--budget--*/
 .budget_main{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
     padding: 70px 0;
+    .outer{
+        margin: 20px 0;
     .budget_box{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         height: 100%;
@@ -599,7 +601,7 @@ section.lasttext {
                 span{
                     color: $current-color;
                     z-index: 0;
-                    
+                    opacity: 0.1;
                 }
             }
             &:hover h3{
@@ -638,4 +640,5 @@ section.lasttext {
         }
     }
  }
+}
 }

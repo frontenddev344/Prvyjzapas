@@ -507,22 +507,26 @@ section.lasttext {
   color: #031a29;
 }
 
+/*--budget--*/
 .budget_main {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
   padding: 70px 0;
 }
-.budget_main .budget_box {
+.budget_main .outer {
+  margin: 20px 0;
+}
+.budget_main .outer .budget_box {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.budget_main .budget_box img {
+.budget_main .outer .budget_box img {
   height: 301px;
   width: 100%;
   object-fit: cover;
 }
-.budget_main .budget_box .contents {
+.budget_main .outer .budget_box .contents {
   background: #e4dccf;
   text-align: center;
   padding: 24px;
@@ -533,33 +537,34 @@ section.lasttext {
   height: 100%;
   justify-content: space-around;
 }
-.budget_main .budget_box .contents:hover {
+.budget_main .outer .budget_box .contents:hover {
   background: #031a29;
   color: #fff;
 }
-.budget_main .budget_box .contents:hover span {
+.budget_main .outer .budget_box .contents:hover span {
   color: #fff;
   z-index: 0;
+  opacity: 0.1;
 }
-.budget_main .budget_box .contents:hover h3 {
+.budget_main .outer .budget_box .contents:hover h3 {
   color: #fff;
 }
-.budget_main .budget_box .contents:hover .btnss a {
+.budget_main .outer .budget_box .contents:hover .btnss a {
   background: #fff;
   color: #031a29;
 }
-.budget_main .budget_box .contents h3 {
+.budget_main .outer .budget_box .contents h3 {
   color: #031a29;
   font-size: 20px;
   line-height: 40px;
   font-weight: 600;
   text-transform: capitalize;
 }
-.budget_main .budget_box .contents p {
+.budget_main .outer .budget_box .contents p {
   position: relative;
   z-index: 2;
 }
-.budget_main .budget_box .contents span {
+.budget_main .outer .budget_box .contents span {
   font-size: 125px;
   font-weight: 600;
   position: absolute;
@@ -569,10 +574,10 @@ section.lasttext {
   z-index: 0;
   display: inline-block;
 }
-.budget_main .budget_box .contents .btnss {
+.budget_main .outer .budget_box .contents .btnss {
   margin-top: 15px;
 }
-.budget_main .budget_box .contents .btnss a {
+.budget_main .outer .budget_box .contents .btnss a {
   color: #fff;
 }
 
