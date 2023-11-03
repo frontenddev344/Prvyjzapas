@@ -1,18 +1,579 @@
-/* Error: unmatched "}".
- *     ,
- * 641 | }
- *     | ^
- *     '
- *   scss\_reset.scss 641:1  @import
- *   scss\style.scss 1:9     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a     \2577 \a 641 \2502  }\a     \2502  ^\a     \2575 \a   scss\\_reset.scss 641:1  @import\a   scss\\style.scss 1:9     root stylesheet';
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  font-family: "Raleway", sans-serif;
+  background: #f1f1f1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 1.5rem;
+}
+
+.site-logo img {
+  max-width: 60%;
+}
+
+.site-header {
+  background: #e4dccf;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.site-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header .container .site-logo a {
+  font-size: 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+@media screen and (max-width: 768px) {
+  .site-header .container .site-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30rem;
+    background: #262626;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.site-header .container .site-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-header .container .site-menu ul .closed-menu {
+  color: #fff;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .site-header .container .site-menu ul .closed-menu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-header .container .site-menu ul {
+    flex-direction: column;
+    padding: 6rem 8rem;
+  }
+}
+.site-header .container .site-menu ul a {
+  font-size: 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1.6rem;
+  transition: all 0.2s linear;
+  position: relative;
+  color: #031a29;
+}
+.site-header .container .site-menu ul a.active {
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .site-header .container .site-menu ul a {
+    padding: 1rem;
+  }
+}
+.site-header .container .site-menu ul a:hover::after {
+  width: 100%;
+}
+.site-header .container .site-menu ul a::after {
+  content: "";
+  border-bottom: 2px solid #000;
+  position: absolute;
+  width: 0%;
+  top: 80%;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.site-header .container .site-menu ul a.active::after {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .site-header .container .site-menu ul a {
+    color: #e4dccf;
+    padding: 1rem;
+  }
+}
+.site-header .container .menu-toggle {
+  display: none;
+  padding: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .site-header .container .menu-toggle {
+    display: block;
+  }
+}
+
+.toggle .site-header .container .site-menu {
+  transform: translateX(0);
+}
+
+.site-banner {
+  margin-top: 5.9rem;
+  padding: 0 0;
+  position: relative;
+  background: url(../images/banner-img.jpg) rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 500px;
+  z-index: 2;
+}
+.site-banner .container {
+  height: 100%;
+}
+.site-banner .banner-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.site-banner .banner-main-content h1 {
+  font-size: 4rem;
+  color: #e4dccf;
+  line-height: 1.7;
+  text-transform: capitalize;
+  margin: 0 0 1rem;
+}
+@media screen and (max-width: 575px) {
+  .site-banner .banner-main-content h1 {
+    font-size: 25px;
+  }
+}
+.site-banner .banner-main-content p {
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  max-width: 60%;
+  line-height: 23px;
+}
+@media screen and (max-width: 575px) {
+  .site-banner .banner-main-content p {
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 100%;
+  }
+}
+
+section.site-banner.Rozpočet {
+  margin-top: 5.9rem;
+  padding: 0 0;
+  position: relative;
+  background: url(../images/budgetbanner.jpg) rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 500px;
+  z-index: 2;
+}
+
+.hotel_list {
+  padding: 8rem 0;
+}
+.hotel_list .hotel_grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+.hotel_list .hotel_grid_container .hotel_grid_item {
+  width: 100%;
+}
+
+.site-footer {
+  position: relative;
+  background: #e4dccf;
+  padding: 8rem 0 0;
+}
+.site-footer .footer-logo p {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.site-footer .footer-logo a {
+  display: inline-block;
+  color: #fff;
+  margin: 0 0 2rem;
+}
+.site-footer .footer-logo a img {
+  max-width: 60%;
+}
+.site-footer .useful-link {
+  margin-left: 6rem;
+}
+@media screen and (max-width: 767px) {
+  .site-footer .useful-link {
+    margin-left: 0;
+  }
+}
+.site-footer .useful-link li a {
+  color: #fff;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+.site-footer .footer-address li {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.site-footer .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-footer .footer-social ul li a {
+  display: inline-block;
+  background: #fff;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #031a29;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  margin-right: 1rem;
+}
+.site-footer .footer-social ul li a:hover {
+  transform: translateY(-10px);
+}
+.site-footer .footer-bottom {
+  background: #fff;
+  padding: 1rem 0;
+  margin-top: 5rem;
+}
+.site-footer .footer-bottom .copyright p {
+  color: #031a29;
+}
+.site-footer .footer-bottom .privacy-and-policy ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.site-footer .footer-bottom .privacy-and-policy ul a {
+  display: inline-block;
+  margin-left: 1rem;
+  color: #031a29;
+}
+
+.useful-link h3, .footer-address h3 {
+  color: #fff;
+  font-size: 25px;
+  line-height: 34px;
+  margin: 0 0 2rem;
+}
+
+/* homecard-css-start*/
+.content {
+  padding: 40px 0;
+}
+.content__section p {
+  color: #e4dccf;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.slovernia__destinations {
+  height: 100%;
+}
+.slovernia__destinations img {
+  width: 100%;
+  height: 303px;
+  object-fit: cover;
+}
+.slovernia__destinations p {
+  color: #e4dccf;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: justify;
+}
+
+.Slovenia__content {
+  padding: 20px 20px;
+}
+.Slovenia__content h3 {
+  color: #031a29;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.Slovenia__content p {
+  color: #031a29;
+  font-size: 17px;
+}
+
+.slovernia__card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.slovernia__card:hover {
+  transform: translateY(-10px);
+}
+
+.space {
+  margin: 20px 0;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+/* homecard-css-end*/
+/*lasttext-css-start*/
+section.lasttext {
+  padding: 50px 0;
+}
+
+.lasttext-content h3 {
+  color: #e4dccf;
+}
+
+/*lasttext-css-end*/
+.primary_btn {
+  display: inline-block;
+  background: #031a29;
+  border: 2px solid #031a29;
+  color: #fff;
+  padding: 1rem 4rem;
+  transition: all 0.2s linear;
+}
+.primary_btn:hover {
+  background: transparent;
+}
+
+.trip-section {
+  padding: 8rem 0;
+}
+.trip-section .trip-content-wrap .content_box {
+  padding: 2rem;
+  box-shadow: 0 0 10px 0 #e4dccf;
+  margin: 0 0 4rem;
+  border-left: 10px solid #e4dccf;
+}
+.trip-section .trip-content-wrap .grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+}
+.trip-section .trip-content-wrap .grid_container .grid_item {
+  border-radius: 20px;
+  background: rgba(228, 220, 207, 0.4901960784);
+  padding: 20px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  cursor: pointer;
+}
+.trip-section .trip-content-wrap .grid_container .grid_item:hover::after {
+  transform: translateY(0%);
+}
+.trip-section .trip-content-wrap .grid_container .grid_item:hover .number {
+  transform: translate(100%) rotate(360deg);
+}
+.trip-section .trip-content-wrap .grid_container .grid_item::after {
+  content: "";
+  background: #e4dccf;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  transform: translateY(-100%);
+}
+.trip-section .trip-content-wrap .grid_container .grid_item .icon .number {
+  font-size: 24px;
+  line-height: normal;
+  color: #000;
+  font-weight: 500;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  margin-bottom: 10px;
+  transition: all 0.6s ease-in-out;
+}
+.trip-section .trip-content-wrap .grid_container .grid_item .content {
+  padding: 2rem 0;
+}
+
+/*--Rozpočet page--*/
+.Rozpočet_bnr {
+  background: url(../images/budget-bnr.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.Rozpočet_bnr:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.73);
+  z-index: 0;
+}
+.Rozpočet_bnr h1 {
+  z-index: 1;
+}
+
+.start-para {
+  width: 100%;
+  max-width: 1099px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.start-para p {
+  color: #031a29;
+}
+
+.budget_main {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgb(255, 239, 236) 100%);
+  padding: 70px 0;
+}
+.budget_main .budget_box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.budget_main .budget_box img {
+  height: 301px;
+  width: 100%;
+  object-fit: cover;
+}
+.budget_main .budget_box .contents {
+  background: #e4dccf;
+  text-align: center;
+  padding: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+.budget_main .budget_box .contents:hover {
+  background: #031a29;
+  color: #fff;
+}
+.budget_main .budget_box .contents:hover span {
+  color: #fff;
+  z-index: 0;
+}
+.budget_main .budget_box .contents:hover h3 {
+  color: #fff;
+}
+.budget_main .budget_box .contents:hover .btnss a {
+  background: #fff;
+  color: #031a29;
+}
+.budget_main .budget_box .contents h3 {
+  color: #031a29;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.budget_main .budget_box .contents p {
+  position: relative;
+  z-index: 2;
+}
+.budget_main .budget_box .contents span {
+  font-size: 125px;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(14, 13, 13, 0.1098039216);
+  z-index: 0;
+  display: inline-block;
+}
+.budget_main .budget_box .contents .btnss {
+  margin-top: 15px;
+}
+.budget_main .budget_box .contents .btnss a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
