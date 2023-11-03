@@ -577,6 +577,12 @@ section.lasttext {
         height: 100%;
         display: flex;
         flex-direction: column;
+        img{
+            height: 301px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
         .contents {
             background: #e4dccf;
             text-align: center;
