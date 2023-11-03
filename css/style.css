@@ -506,4 +506,12 @@ section.lasttext {
   color: #031a29;
 }
 
+.budget_main .budget_box h3 {
+  color: #031a29;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
 /*# sourceMappingURL=style.css.map */

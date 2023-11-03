@@ -566,3 +566,12 @@ section.lasttext {
         color: $theme-color;
     }
 }
+
+
+.budget_main{
+    .budget_box{
+        h3{
+            @include box_heading;
+        }
+    }
+}
