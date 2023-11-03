@@ -199,14 +199,6 @@ html {
     background-blend-mode: multiply;
     height: 500px;
     z-index: 2;
-    &::after{
-        content: '';
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 0;
-    }
-
     .container {
         height: 100%;
     }
@@ -228,7 +220,7 @@ html {
         }
 
         p {
-            color:$theme-color;
+            color:$current-color;
             font-size: 1.6rem;
             text-align: center;
         }
@@ -382,10 +374,11 @@ html {
     padding: 20px 20px;
 
     h3 {
-        color: $secondery-color;
+        color: $theme-color;
         font-size: 20px;
         line-height: 40px;
         font-weight: 600;
+        text-transform: capitalize;
     }
 
     p {
@@ -430,3 +423,7 @@ section.lasttext {
 }
 
 /*lasttext-css-end*/
+.primary_btn{
+    @include button;
+}
+

@@ -176,13 +176,6 @@ html {
   height: 500px;
   z-index: 2;
 }
-.site-banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 0;
-}
 .site-banner .container {
   height: 100%;
 }
@@ -201,7 +194,7 @@ html {
   margin: 0 0 1rem;
 }
 .site-banner .banner-main-content p {
-  color: #031a29;
+  color: #fff;
   font-size: 1.6rem;
   text-align: center;
 }
@@ -319,10 +312,11 @@ html {
   padding: 20px 20px;
 }
 .Slovenia__content h3 {
-  color: #e4dccf;
+  color: #031a29;
   font-size: 20px;
   line-height: 40px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .Slovenia__content p {
   color: #031a29;
@@ -358,5 +352,16 @@ section.lasttext {
 }
 
 /*lasttext-css-end*/
+.primary_btn {
+  display: inline-block;
+  background: #031a29;
+  border: 2px solid #031a29;
+  color: #fff;
+  padding: 1rem 4rem;
+  transition: all 0.2s linear;
+}
+.primary_btn:hover {
+  background: transparent;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+@mixin button {
+    display: inline-block;
+    background: $theme-color;
+    border: 2px solid $theme-color;
+    color: #fff;
+    padding: 1rem 4rem;
+    transition: $transition;
+    &:hover{
+        background: transparent;
+    }
+}
