@@ -495,4 +495,15 @@ section.lasttext {
   z-index: 1;
 }
 
+.start-para {
+  width: 100%;
+  max-width: 1099px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.start-para p {
+  color: #031a29;
+}
+
 /*# sourceMappingURL=style.css.map */
