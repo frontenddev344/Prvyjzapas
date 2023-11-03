@@ -581,4 +581,9 @@ section.lasttext {
   color: #fff;
 }
 
+/*--lasttext budget--*/
+.lasttext.budget p {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
