@@ -240,7 +240,7 @@ section.site-banner.Rozpočet {
   margin-top: 5.9rem;
   padding: 0 0;
   position: relative;
-  background: url(../images/budgetbanner.jpg) rgba(0, 0, 0, 0.3);
+  background: url(../images/budgetbanner.jpg) rgba(0, 0, 0, 0.7);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -253,7 +253,7 @@ section.site-banner.boutique-banner {
   margin-top: 5.9rem;
   padding: 0 0;
   position: relative;
-  background: url(../images/boutiquebanner.jpg) rgba(0, 0, 0, 0.3);
+  background: url(../images/boutiquebanner.jpg) rgba(0, 0, 0, 0.7);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -695,6 +695,8 @@ section.lasttext {
 }
 .adventurous_space p {
   margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 26PX;
 }
 @media screen and (max-width: 767px) {
   .adventurous_space {
@@ -719,9 +721,35 @@ section.lasttext {
   padding: 16px 0px 50px;
 }
 
+section.site-banner.kasino-banner {
+  margin-top: 5.9rem;
+  padding: 0 0;
+  position: relative;
+  background: url(../images/kasinobanner.jpg) rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 450px;
+  z-index: 2;
+}
+
+section.site-banner.conference-banner {
+  margin-top: 5.9rem;
+  padding: 0 0;
+  position: relative;
+  background: url(../images/konferencebanner.jpg) rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 450px;
+  z-index: 2;
+}
+
 /*contact-css-start*/
 .contact__section {
-  background: url(../images/contactbanner.jpg) rgba(0, 0, 0, 0.3);
+  background: url(../images/contactbanner.jpg) rgba(0, 0, 0, 0.7);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -767,7 +795,7 @@ section.privacy-policy h4 {
 /*contact-css-end*/
 /*privacy-css-start*/
 .privacy__section {
-  background: url(../images/privacybanner.png) rgba(0, 0, 0, 0.3);
+  background: url(../images/privacybanner.png) rgba(0, 0, 0, 0.7);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -799,7 +827,7 @@ section.terms {
 }
 
 .terms__section {
-  background: url(../images/termsbanner.png) rgba(0, 0, 0, 0.3);
+  background: url(../images/termsbanner.png) rgba(0, 0, 0, 0.7);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

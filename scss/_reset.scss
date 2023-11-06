@@ -270,7 +270,7 @@ section.site-banner.Rozpočet {
     margin-top: 5.9rem;
     padding: 0 0;
     position: relative;
-    background: url(../images/budgetbanner.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../images/budgetbanner.jpg) rgba(0, 0, 0, 70%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -283,7 +283,7 @@ section.site-banner.boutique-banner {
     margin-top: 5.9rem;
     padding: 0 0;
     position: relative;
-    background: url(../images/boutiquebanner.jpg) rgba(0, 0, 0, 0.3);
+    background: url(../images/boutiquebanner.jpg) rgba(0, 0, 0, 70%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -734,6 +734,7 @@ section.lasttext {
 .boutique-card {
     background: $secondery-color;
 }
+
 .adventurous_left img {
     border-radius: 6px;
     transition: all 0.3s ease;
@@ -741,88 +742,127 @@ section.lasttext {
     object-fit: cover;
     object-position: top;
     height: 350px;
+
     @media screen and (max-width:1024px) {
-    height: 100%;
-    border-radius: 0;
-    }   
+        height: 100%;
+        border-radius: 0;
     }
-    
-    .adventurous_left {
+}
+
+.adventurous_left {
     overflow: hidden;
     position: relative;
     z-index: 1;
     height: 100%;
     width: 100%;
-    }
-    
-    .adventurous_left a {
+}
+
+.adventurous_left a {
     height: 100%;
     width: 100%;
     display: block;
-    }
-    
-    .adventurous_left:hover img {
+}
+
+.adventurous_left:hover img {
     transform: scale(1.1);
     border-radius: 6px;
-    }
-    
-    .adventurous_right {
+}
+
+.adventurous_right {
     position: relative;
     z-index: 1;
     height: 100%;
-    }
-    
-    .adventurous_right h3 a {
+}
+
+.adventurous_right h3 a {
     padding-bottom: 18px;
     display: block;
     color: $theme-color;
     font-weight: 500;
     font-size: 24px;
-    }
-    
-    .adventurous_right .bnr_btn {
+}
+
+.adventurous_right .bnr_btn {
     margin: 22px 0px 0;
-    }
-    
-    .adventurous_flex {
+}
+
+.adventurous_flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    }
-    
-    .adventurous_space {
+
+}
+
+.adventurous_space {
     padding-left: 44px;
     padding-top: 25px;
     padding-bottom: 25px;
-    p{
+
+    p {
         margin-bottom: 25px;
+        font-size: 17px;
+        line-height: 26PX;
     }
+
     @media screen and (max-width:767px) {
         padding-left: 0;
     }
-    }
-    
-    .adventurous_space_left {
+}
+
+.adventurous_space_left {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 30px;
-    }
-    .adventurous_right.adventurous_flex.adventurous_space_left p{
-        margin-bottom: 25px;
-    }
-    .adventurous_main_heading {
+}
+
+.adventurous_right.adventurous_flex.adventurous_space_left p {
+    margin-bottom: 25px;
+}
+
+.adventurous_main_heading {
     position: relative;
     z-index: 2;
     text-align: center;
     padding: 16px 0px 50px;
-    }
-    
+}
+
 // boutique-css-end //
+
+// site-kasino-css-start// 
+section.site-banner.kasino-banner {
+    margin-top: 5.9rem;
+    padding: 0 0;
+    position: relative;
+    background: url(../images/kasinobanner.jpg) rgba(0 0 0 /70%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 450px;
+    z-index: 2;
+}
+
+// site-kasino-css-end// 
+
+// site-conference-css-start// 
+section.site-banner.conference-banner {
+    margin-top: 5.9rem;
+    padding: 0 0;
+    position: relative;
+    background: url(../images/konferencebanner.jpg) rgba(0 0 0 / 70%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 450px;
+    z-index: 2;
+}
+
+// site-conference-css-end// 
 
 /*contact-css-start*/
 .contact__section {
-    background: url(../images/contactbanner.jpg)rgba(0, 0, 0, 0.3);
+    background: url(../images/contactbanner.jpg)rgba(0 0 0 / 70%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -875,7 +915,7 @@ section.privacy-policy {
 
 /*privacy-css-start*/
 .privacy__section {
-    background: url(../images/privacybanner.png)rgba(0, 0, 0, 0.3);
+    background: url(../images/privacybanner.png)rgba(0, 0, 0, 70%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -909,7 +949,7 @@ section.terms {
 }
 
 .terms__section {
-    background: url(../images/termsbanner.png)rgba(0, 0, 0, 0.3);
+    background: url(../images/termsbanner.png)rgba(0, 0, 0, 70%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
