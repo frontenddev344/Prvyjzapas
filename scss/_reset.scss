@@ -152,6 +152,7 @@ html {
 
                     &.active {
                         color: $current-color;
+                        font-weight: 600;
                     }
 
                     @media screen and (max-width:991px) {
@@ -314,7 +315,7 @@ section.site-banner.boutique-banner {
 .site-footer {
     position: relative;
     background: $secondery-color;
-    padding: 8rem 0 0;
+    padding: 7rem 0;
 
     .footer-logo {
         p {
