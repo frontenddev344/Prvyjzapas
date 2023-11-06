@@ -730,6 +730,96 @@ section.lasttext {
 
 /*--lasttext budget--*/
 
+// boutique-css-start //
+.boutique-card {
+    background: $secondery-color;
+}
+.adventurous_left img {
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 350px;
+    @media screen and (max-width:1024px) {
+    height: 100%;
+    border-radius: 0;
+    }   
+    }
+    
+    .adventurous_left {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    }
+    
+    .adventurous_left a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    }
+    
+    .adventurous_left:hover img {
+    transform: scale(1.1);
+    border-radius: 6px;
+    }
+    
+    .adventurous_right {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    }
+    
+    .adventurous_right h3 a {
+    padding-bottom: 18px;
+    display: block;
+    color: $theme-color;
+    font-weight: 500;
+    font-size: 24px;
+    }
+    
+    .adventurous_right .bnr_btn {
+    margin: 22px 0px 0;
+    }
+    
+    .adventurous_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    }
+    
+    .adventurous_space {
+    padding-left: 44px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    p{
+        margin-bottom: 25px;
+    }
+    @media screen and (max-width:767px) {
+        padding-left: 0;
+    }
+    }
+    
+    .adventurous_space_left {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    }
+    .adventurous_right.adventurous_flex.adventurous_space_left p{
+        margin-bottom: 25px;
+    }
+    .adventurous_main_heading {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 16px 0px 50px;
+    }
+    
+// boutique-css-end //
+
 /*contact-css-start*/
 .contact__section {
     background: url(../images/contactbanner.jpg)rgba(0, 0, 0, 0.3);
