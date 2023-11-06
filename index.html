@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sk">
 
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,6 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <title>Prvyjzapas</title>
@@ -266,7 +265,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="footer-logo">
-              <a href="index.html"><img src="images/site-logo.png" class="img-fluid"></a>
+              <a href="index.html"><img src="images/site-logo.png" class="img-fluid" alt="site-logo"></a>
             </div>
             <div class="footer-social">
               <ul>
@@ -303,8 +302,8 @@
                   Bratislava
                   Slovensko </li>
                 <li><a href="tel:+421-123-456-789">+421-123-456-789</a></li>
-                <li><a href="mailto:info@prvýzápas.com" target="_blank">info@prvýzápas.com </li></a>
-                <li><a href="mailto:podpora@prvýzápas.com" target="_blank">podpora@prvýzápas.com</li></a>
+                <li><a href="mailto:info@prvýzápas.com" target="_blank">info@prvýzápas.com </a></li>
+                <li><a href="mailto:podpora@prvýzápas.com" target="_blank">podpora@prvýzápas.com</a></li>
               </ul>
             </div>
           </div>
@@ -338,7 +337,7 @@
       var cookieAlert = document.querySelector(".cookie-alert");
       var acceptCookies = document.querySelector(".accept-cookies");
 
-      cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+      cookieAlert.offsetHeight;
 
       if (!getCookie("acceptCookies")) {
         cookieAlert.classList.add("show");
