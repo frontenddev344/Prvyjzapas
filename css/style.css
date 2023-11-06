@@ -29,11 +29,24 @@ a {
   color: inherit;
 }
 
+@media screen and (max-width: 575px) {
+  li {
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
 p {
   font-family: "Barlow", sans-serif;
   margin-bottom: 0;
   font-size: 18px;
   font-weight: 400;
+}
+@media screen and (max-width: 575px) {
+  p {
+    font-size: 15px;
+    line-height: 27px;
+  }
 }
 
 a:focus,
@@ -645,9 +658,66 @@ section.privacy-policy {
 }
 section.privacy-policy h4 {
   padding: 10px 0;
+  font-size: 24px;
 }
 
 /*contact-css-end*/
+/*privacy-css-start*/
+.privacy__section {
+  background: url(../images/privacybanner.png) rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 95px;
+}
+
+.privacytext {
+  text-align: center;
+}
+.privacytext h1 {
+  font-size: 4rem;
+  color: #e4dccf;
+  line-height: 1.7;
+  text-transform: capitalize;
+  margin: 0 0 1rem;
+}
+
+/*privacy-css-end*/
+/*terms-css-start*/
+.terms__section {
+  background: url(../images/termsbanner.png) rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 95px;
+}
+
+.termstext {
+  text-align: center;
+}
+.termstext h1 {
+  font-size: 4rem;
+  color: #e4dccf;
+  line-height: 1.7;
+  text-transform: capitalize;
+  margin: 0 0 1rem;
+}
+
+/*terms-css-end*/
 /*cookie start*/
 .cookie-alert {
   position: fixed;
