@@ -368,6 +368,7 @@ section.site-banner.Rozpočet {
 .Slovenia__content p {
   color: #031a29;
   font-size: 17px;
+  margin: 0 0 2rem;
 }
 
 .slovernia__card {
@@ -584,6 +585,13 @@ section.lasttext {
 /*--lasttext budget--*/
 .lasttext.budget p {
   text-align: center;
+}
+
+.lasttext-content {
+  padding: 2rem;
+  box-shadow: 0 0 10px 0 #e4dccf;
+  margin: 0 0 4rem;
+  border-left: 10px solid #e4dccf;
 }
 
 /*# sourceMappingURL=style.css.map */
