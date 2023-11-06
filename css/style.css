@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -30,10 +30,10 @@ a {
 }
 
 p {
-  font-family: "Outfit", sans-serif;
+  font-family: "Barlow", sans-serif;
   margin-bottom: 0;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 a:focus,
@@ -338,7 +338,8 @@ section.site-banner.boutique-banner {
   color: #031a29;
 }
 
-.useful-link h3, .footer-address h3 {
+.useful-link h3,
+.footer-address h3 {
   color: #fff;
   font-size: 25px;
   line-height: 34px;
@@ -639,6 +640,47 @@ section.lasttext {
   margin: 0 0 1rem;
 }
 
+section.privacy-policy {
+  padding: 50px 0;
+}
+section.privacy-policy h4 {
+  padding: 10px 0;
+}
+
 /*contact-css-end*/
+/*cookie start*/
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  left: 0;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+a.btn.btn-primary.accept-cookies {
+  background: #e4dccf;
+  padding: 6px 22px;
+  font-size: 20px;
+  color: #031a29;
+  border: 1px solid #e4dccf;
+}
+
+.card-body.p-5 h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/*cookie end*/
 
 /*# sourceMappingURL=style.css.map */

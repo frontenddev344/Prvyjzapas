@@ -289,8 +289,8 @@
                 <li><a href="store.html">Butik</a></li>
                 <li><a href="conference.html"> konferencia</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="privacy.html">Kontakt</a></li>
-                <li><a href="terms-conditions.html">Kontakt</a></li>
+                <li><a href="privacy.html">Súkromie</a></li>
+                <li><a href="terms-conditions.html">Podmienky</a></li>
               </ul>
             </div>
           </div>
@@ -317,8 +317,68 @@
         </svg>
     </div> -->
   </footer>
-
   <!--site-footer-start-->
+
+  <!--cookies start -->
+  <div class="card cookie-alert">
+    <div class="card-body p-5">
+      <h4>Táto webová stránka používa súbory cookie</h4>
+      <p>Súbory cookie používame na prispôsobenie obsahu a reklám, poskytovanie funkcií sociálnych médií a analýzu
+        návštevnosti. Informácie o vašom používaní našej stránky zdieľame aj s našimi sociálnymi médiami, reklamnými a
+        analytickými partnermi, ktorí ich môžu skombinovať s inými informáciami, ktoré ste im poskytli alebo ktoré
+        zhromaždili z vášho používania ich služieb.
+        Zásady ochrany osobných údajov pre Prvý Zápas </p>
+      <div class="btn-toolbar justify-content-end">
+
+        <a href="#" class="btn btn-primary accept-cookies">Súhlasiť</a>
+      </div>
+    </div>
+  </div>
+  <!--cookies end -->
+
+  <script>
+    (function () {
+      "use strict";
+
+      var cookieAlert = document.querySelector(".cookie-alert");
+      var acceptCookies = document.querySelector(".accept-cookies");
+
+      cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+      if (!getCookie("acceptCookies")) {
+        cookieAlert.classList.add("show");
+      }
+
+      acceptCookies.addEventListener("click", function () {
+        setCookie("acceptCookies", true, 60);
+        cookieAlert.classList.remove("show");
+      });
+    })();
+
+    // Cookie functions stolen from w3schools
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+  </script>
 
 </body>
 <script src="js/boostrap.js"></script>
