@@ -614,11 +614,29 @@ section.lasttext {
 /*--lasttext budget--*/
 /*contact-css-start*/
 .contact__section {
-  background-image: url(../images/contactbanner.jpg);
+  background: url(../images/contactbanner.jpg) rgba(0, 0, 0, 0.3);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 450px;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 95px;
+}
+
+.contacttext {
+  text-align: center;
+}
+.contacttext h1 {
+  font-size: 4rem;
+  color: #e4dccf;
+  line-height: 1.7;
+  text-transform: capitalize;
+  margin: 0 0 1rem;
 }
 
 /*contact-css-end*/
