@@ -661,6 +661,16 @@ section.privacy-policy h4 {
   font-size: 24px;
 }
 
+.content-wrap h4 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 575px) {
+  .content-wrap p {
+    text-align: justify;
+  }
+}
+
 /*contact-css-end*/
 /*privacy-css-start*/
 .privacy__section {
@@ -691,6 +701,10 @@ section.privacy-policy h4 {
 
 /*privacy-css-end*/
 /*terms-css-start*/
+section.terms {
+  padding: 50px 0;
+}
+
 .terms__section {
   background: url(../images/termsbanner.png) rgba(0, 0, 0, 0.3);
   background-position: center;

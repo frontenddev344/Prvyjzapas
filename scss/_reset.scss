@@ -767,6 +767,20 @@ section.privacy-policy {
     }
 }
 
+.content-wrap {
+    h4 {
+        font-size: 24px;
+    }
+}
+
+.content-wrap {
+    p {
+        @media screen and (max-width:575px) {
+            text-align: justify;
+        }
+    }
+}
+
 /*contact-css-end*/
 
 /*privacy-css-start*/
@@ -800,6 +814,10 @@ section.privacy-policy {
 /*privacy-css-end*/
 
 /*terms-css-start*/
+section.terms {
+    padding: 50px 0;
+}
+
 .terms__section {
     background: url(../images/termsbanner.png)rgba(0, 0, 0, 0.3);
     background-position: center;
