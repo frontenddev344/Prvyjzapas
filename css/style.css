@@ -183,7 +183,7 @@ html {
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
-  height: 500px;
+  height: 450px;
   z-index: 2;
 }
 .site-banner .container {
@@ -232,7 +232,20 @@ section.site-banner.Rozpočet {
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
-  height: 500px;
+  height: 450px;
+  z-index: 2;
+}
+
+section.site-banner.boutique-banner {
+  margin-top: 5.9rem;
+  padding: 0 0;
+  position: relative;
+  background: url(../images/boutiquebanner.jpg) rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 450px;
   z-index: 2;
 }
 
@@ -274,12 +287,16 @@ section.site-banner.Rozpočet {
   }
 }
 .site-footer .useful-link li a {
-  color: #fff;
+  color: #031a29;
   font-size: 1.6rem;
   display: inline-block;
+  transition: 0.5s;
+}
+.site-footer .useful-link li a:hover {
+  transform: translateY(-5px);
 }
 .site-footer .footer-address li {
-  color: #fff;
+  color: #031a29;
   font-size: 1.6rem;
 }
 .site-footer .footer-social ul {
@@ -593,5 +610,17 @@ section.lasttext {
   margin: 0 0 4rem;
   border-left: 10px solid #e4dccf;
 }
+
+/*--lasttext budget--*/
+/*contact-css-start*/
+.contact__section {
+  background-image: url(../images/contactbanner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+/*contact-css-end*/
 
 /*# sourceMappingURL=style.css.map */
