@@ -144,6 +144,7 @@ html {
   position: relative;
   font-family: "Kay Pho Du", serif;
   color: #031a29;
+  font-weight: 500;
 }
 .site-header .container .site-menu ul a.active {
   color: #fff;

@@ -150,6 +150,7 @@ html {
                     position: relative;
                     font-family: 'Kay Pho Du', serif;
                     color: $theme-color;
+                    font-weight: 500;
 
                     &.active {
                         color: $current-color;
@@ -363,7 +364,8 @@ html {
         color: $theme-color;
         font-family: 'Kay Pho Du', serif;
         font-size: 18px;
-        a{
+
+        a {
             font-family: 'Kay Pho Du', serif;
         }
     }
@@ -371,7 +373,7 @@ html {
     .footer-social ul {
         display: flex;
         flex-wrap: wrap;
-        
+
         li a {
             display: inline-block;
             background: #fff;
@@ -743,12 +745,15 @@ section.lasttext {
 .boutique-card {
     background: $secondery-color;
 }
-img.img-fluid.boutiquepic{
+
+img.img-fluid.boutiquepic {
     border-radius: 0;
 }
-h3.line{
+
+h3.line {
     position: relative;
 }
+
 h3.line::after {
     position: absolute;
     background: #031a29;
@@ -759,6 +764,7 @@ h3.line::after {
     left: -25px;
     transform: translate(-10px, 17px);
 }
+
 .adventurous_left img {
     border-radius: 6px;
     transition: all 0.3s ease;
@@ -849,28 +855,32 @@ h3.line::after {
     text-align: center;
     padding: 16px 0px 50px;
 }
-.adventurous_right.adventurous_flex.adventurous_space.shadow{
+
+.adventurous_right.adventurous_flex.adventurous_space.shadow {
     background: rgba(255, 255, 255, 0.9);
     border: 3px solid #fff;
     border-radius: 4px;
     z-index: 9;
     position: relative;
-    margin:  0;
+    margin: 0;
     width: calc(100% + 150px);
     margin-left: -150px;
+
     @media screen and (max-width:768px) {
         background: none;
         border: none;
-        border-radius:0;
+        border-radius: 0;
         z-index: 0;
         position: inherit;
         width: auto;
         margin-left: 0;
     }
 }
+
 .adventurous_main .row {
     row-gap: 50px;
 }
+
 /*betting-section-start*/
 .main-img-text-content {
     display: flex;
@@ -1042,6 +1052,7 @@ section.privacy-policy {
     h3 {
         margin: 12px 0 !important;
     }
+
     h4 {
         margin: 10px 0;
         font-size: 21px;
