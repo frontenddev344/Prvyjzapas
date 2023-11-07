@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 @import "mixin";
 @import "variables";
@@ -63,7 +63,7 @@ h5,
 h6,
 figure {
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Kay Pho Du', serif;
 }
 
 html {
@@ -148,6 +148,7 @@ html {
                     padding: 1.6rem;
                     transition: $transition;
                     position: relative;
+                    font-family: 'Kay Pho Du', serif;
                     color: $theme-color;
 
                     &.active {
@@ -347,6 +348,8 @@ html {
                 font-size: 1.6rem;
                 display: inline-block;
                 transition: .5s;
+                font-family: 'Kay Pho Du', serif;
+                font-weight: 500;
 
                 &:hover {
                     transform: translateY(-5px);
@@ -358,13 +361,17 @@ html {
 
     .footer-address li {
         color: $theme-color;
-        font-size: 1.6rem;
+        font-family: 'Kay Pho Du', serif;
+        font-size: 18px;
+        a{
+            font-family: 'Kay Pho Du', serif;
+        }
     }
 
     .footer-social ul {
         display: flex;
         flex-wrap: wrap;
-
+        
         li a {
             display: inline-block;
             background: #fff;
@@ -377,6 +384,7 @@ html {
             border-radius: 50%;
             transition: all 0.3s ease-in-out;
             margin-right: 1rem;
+
 
             &:hover {
                 transform: translateY(-10px);
@@ -460,9 +468,9 @@ html {
     h3 {
         color: $theme-color;
         font-size: 20px;
-        line-height: 40px;
-        font-weight: 600;
+        line-height: normal;
         text-transform: capitalize;
+        font-family: 'Playfair Display', serif;
     }
 
     p {
@@ -1026,12 +1034,17 @@ section.privacy-policy {
     h4 {
         padding: 10px 0;
         font-size: 24px;
+        font-weight: 400;
     }
 }
 
 .content-wrap {
+    h3 {
+        margin: 12px 0 !important;
+    }
     h4 {
-        font-size: 24px;
+        margin: 10px 0;
+        font-size: 21px;
     }
 }
 
