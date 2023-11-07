@@ -735,7 +735,22 @@ section.lasttext {
 .boutique-card {
     background: $secondery-color;
 }
-
+img.img-fluid.boutiquepic{
+    border-radius: 0;
+}
+h3.line{
+    position: relative;
+}
+h3.line::after {
+    position: absolute;
+    background: #031a29;
+    height: 2px;
+    width: 27px;
+    content: "";
+    top: 0;
+    left: -25px;
+    transform: translate(-10px, 17px);
+}
 .adventurous_left img {
     border-radius: 6px;
     transition: all 0.3s ease;
@@ -826,7 +841,28 @@ section.lasttext {
     text-align: center;
     padding: 16px 0px 50px;
 }
-
+.adventurous_right.adventurous_flex.adventurous_space.shadow{
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid #fff;
+    border-radius: 4px;
+    z-index: 9;
+    position: relative;
+    margin:  0;
+    width: calc(100% + 150px);
+    margin-left: -150px;
+    @media screen and (max-width:768px) {
+        background: none;
+        border: none;
+        border-radius:0;
+        z-index: 0;
+        position: inherit;
+        width: auto;
+        margin-left: 0;
+    }
+}
+.adventurous_main .row {
+    row-gap: 50px;
+}
 /*betting-section-start*/
 .main-img-text-content {
     display: flex;
