@@ -631,7 +631,7 @@ section.lasttext {
     max-width: 1099px;
     text-align: center;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 40px 0;
 
     p {
         color: $theme-color;
@@ -1163,6 +1163,15 @@ a.btn.btn-primary.accept-cookies {
 .card-body.p-5 h4 {
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+section.start-para.kasino p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+section.start-para.kasino h2 {
+    font-size: 25px;
 }
 
 /*cookie end*/
