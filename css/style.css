@@ -634,6 +634,11 @@ section.lasttext {
   border-left: 10px solid #e4dccf;
 }
 
+li.primary_btn:hover {
+  background: white;
+  color: #031a29;
+}
+
 /*--lasttext budget--*/
 .boutique-card {
   background: #e4dccf;
