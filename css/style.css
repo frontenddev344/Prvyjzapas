@@ -147,8 +147,8 @@ html {
   font-weight: 500;
 }
 .site-header .container .site-menu ul a.active {
-  color: #fff;
-  font-weight: 600;
+  color: #031a29;
+  font-weight: 500;
 }
 @media screen and (max-width: 991px) {
   .site-header .container .site-menu ul a {
@@ -362,7 +362,7 @@ html {
 
 .useful-link h3,
 .footer-address h3 {
-  color: #fff;
+  color: #031a29;
   font-size: 25px;
   line-height: 34px;
   margin: 0 0 2rem;
