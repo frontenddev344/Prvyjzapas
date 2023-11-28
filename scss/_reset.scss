@@ -115,7 +115,7 @@ html {
                 right: 0;
                 bottom: 0;
                 width: 30rem;
-                background: #262626;
+                background: $secondery-color;
                 transform: translateX(100%);
                 transition: all 0.3s ease-in-out;
             }
@@ -149,7 +149,7 @@ html {
                     transition: $transition;
                     position: relative;
                     font-family: 'Kay Pho Du', serif;
-                    color: $theme-color;
+                    color: #031a29 !important;
                     font-weight: 500;
 
                     &.active {

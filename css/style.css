@@ -108,7 +108,7 @@ html {
     right: 0;
     bottom: 0;
     width: 30rem;
-    background: #262626;
+    background: #e4dccf;
     transform: translateX(100%);
     transition: all 0.3s ease-in-out;
   }
@@ -143,7 +143,7 @@ html {
   transition: all 0.2s linear;
   position: relative;
   font-family: "Kay Pho Du", serif;
-  color: #031a29;
+  color: #031a29 !important;
   font-weight: 500;
 }
 .site-header .container .site-menu ul a.active {
